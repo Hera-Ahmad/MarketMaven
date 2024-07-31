@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# MarketMaven
+MarketMaven is a dynamic stock market app built with React. It offers real-time market data, advanced charting tools, portfolio managemen. Elevate your trading experience with MarketMaven!
+>>>>>>> 309fa33c311849545916e4aeb5a3cf4bbb51d2d7
