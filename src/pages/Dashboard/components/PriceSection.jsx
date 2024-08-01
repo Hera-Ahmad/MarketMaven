@@ -12,7 +12,7 @@ import {
     TabPanels,
     Tabs,
     Text,
-  } from "@chakra-ui/react";
+} from "@chakra-ui/react";
 import { CustomCard } from '../../../ckara/CustomCard'
 import { BsArrowUpRight } from 'react-icons/bs';
 import { AiFillPlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
@@ -24,7 +24,7 @@ const PriceSection = () => {
     return (
         <CustomCard>
             <Flex justify="space-between" align="start">
-                
+
                 <Stack>
                     <HStack color="black.80">
                         <Text fontSize="sm">Current Price</Text>
@@ -62,41 +62,52 @@ const PriceSection = () => {
 
 
             <Tabs variant="soft-rounded">
-        <Flex justify="end">
-          <TabList bg="black.5" p="3px">
-            {["1H", "1D", "1W", "1M"].map((tab) => (
-              <Tab
-                _selected={{ bg: "white" }}
-                key={tab}
-                fontSize="sm"
-                p="6px"
-                borderRadius="4"
-              >
-                {tab}
-              </Tab>
-            ))}
-          </TabList>
-        </Flex>
-        <TabPanels>
-          <TabPanel>
-            <Image w="100%" src="/graph.png" mt="3rem" />
-            <HStack justify="space-between">
-              {timestamps.map((timestamp) => (
-                <Text key={timestamp} fontSize="sm" color="black.80">
-                  {timestamp}
-                </Text>
-              ))}
-            </HStack>
-          </TabPanel>
-          <TabPanel>
-            <p>two!</p>
-          </TabPanel>
-        </TabPanels>
-      </Tabs>
-    </CustomCard>
-  );
+                <Flex justify="end">
+                    <TabList bg="black.5" p="3px">
+                        {["1H", "1D", "1W", "1M"].map((tab) => (
+                            <Tab
+                                _selected={{ bg: "white" }}
+                                key={tab}
+                                fontSize="sm"
+                                p="6px"
+                                borderRadius="4"
+                            >
+                                {tab}
+                            </Tab>
+                        ))}
+                    </TabList>
+                </Flex>
+                <TabPanels>
+                    <TabPanel>
+                        <Image w="100%" src="/graph.png" mt="3rem" />
+                        <HStack justify="space-between">
+                            {timestamps.map((timestamp) => (
+                                <Text key={timestamp} fontSize="sm" color="black.80">
+                                    {timestamp}
+                                </Text>
+                            ))}
+                        </HStack>
+                    </TabPanel>
+                    <TabPanel>
+                        <p>Today's price movement shows significant fluctuations in response to market news and events.
+                        </p>
+                    </TabPanel>
+
+                    <TabPanel>
+                        <p>Over the past week, the price has steadily increased due to positive investor sentiment.
+                        </p>
+                    </TabPanel>
+
+                    
+                    <TabPanel>
+                        <p>The last month's data indicates a strong upward trend driven by robust economic indicators.
+                        </p>
+                    </TabPanel>
+                </TabPanels>
+            </Tabs>
+        </CustomCard>
+    );
 };
 
 export default PriceSection;
 
-            
