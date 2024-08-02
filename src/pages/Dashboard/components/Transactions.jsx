@@ -26,7 +26,7 @@ const Transactions = () => {
             id: "2",
             icon: FaBtc,
             text: "BTC  Sell",
-            amount: "- 12.48513391 BTC",
+            amount: "-₿12.48513391 ",
             timestamp: "2022-06-09 7:06 PM",
         },
         {
@@ -83,7 +83,7 @@ const Transactions = () => {
             <Button w="full" mt="6" colorScheme="gray">
                 View All
             </Button>
-            
+
         </CustomCard>
     );
 };
