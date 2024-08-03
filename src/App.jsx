@@ -17,7 +17,7 @@ function App() {
     },
     {
       path: "/transaction",
-      element:<TransactionsPage/>,
+      element:<TransactionPage/>,
     },
     {
       path: "/Support",
@@ -29,7 +29,7 @@ function App() {
   return (
      <>
      <RouterProvider router={router} />
-     <Dashboard/>
+     
     </>
   );
 }

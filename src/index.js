@@ -7,8 +7,7 @@ import "@fontsource/ubuntu";
 import "@fontsource/ubuntu/400.css";
 import "@fontsource/ubuntu/400-italic.css"; 
 import "@fontsource/ubuntu/500.css";
-
-import theme from './Theme';
+import { theme } from "./Theme/index";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
