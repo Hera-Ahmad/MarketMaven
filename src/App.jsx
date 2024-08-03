@@ -1,27 +1,27 @@
 import React from 'react';
 import Dashboard from './pages/Dashboard/Dashboard';
-import * as React from "react";
-
+import TransactionPage from './pages/Transaction/TransactionPage';
+import Support from './pages/Support/Support';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Transactions from './pages/Dashboard/components/Transactions';
+
 
 function App() {
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element:      <Dashboard/>,
+      element:<Dashboard/>,
     },
     {
       path: "/transaction",
-      element:      <Transactions/>,
+      element:<TransactionsPage/>,
     },
     {
       path: "/Support",
-      element: <Support/>,
+      element:<Support/>,
     },
   ]);
 
